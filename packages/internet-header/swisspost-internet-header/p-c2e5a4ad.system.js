@@ -1,0 +1,2 @@
+System.register(["./p-bd9d660b.system.js"],(function(e){"use strict";var s;return{setters:[function(e){s=e.h}],execute:function(){var t=e("S",(function(e){return s("svg",{viewBox:"0 0 32 32","aria-hidden":"true",class:e.classNames},s("use",{href:"#".concat(e.name)}))}))}}}));
+//# sourceMappingURL=p-c2e5a4ad.system.js.map

@@ -1,0 +1,2 @@
+import{h}from"./index-9351b1b6.js";var SvgIcon=function(e){return h("svg",{viewBox:"0 0 32 32","aria-hidden":"true",class:e.classNames},h("use",{href:"#".concat(e.name)}))};export{SvgIcon as S};
+//# sourceMappingURL=svg-icon.component-256596ec.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"language.model.js","sourceRoot":"","sources":["../../../src/models/language.model.ts"],"names":[],"mappings":"","sourcesContent":["export interface IAvailableLanguage {\r\n  lang: string;\r\n  text?: string;\r\n  title?: string;\r\n  url?: string;\r\n}\r\n"]}

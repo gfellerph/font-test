@@ -1,0 +1,2 @@
+const e=(()=>{let e=0;return function(r){r=r||"";e+=1;return r+e}})();const r=window.matchMedia("(prefers-reduced-motion: reduce)").matches;export{r as p,e as u};
+//# sourceMappingURL=p-0e2ec555.js.map

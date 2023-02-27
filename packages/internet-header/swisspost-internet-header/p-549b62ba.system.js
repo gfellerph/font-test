@@ -1,0 +1,2 @@
+System.register([],(function(e){"use strict";return{execute:function(){var t=e("u",(function(){return window.matchMedia("(prefers-reduced-motion: reduce)").matches}));var n=e("e",(function(e,t){var n=window.getComputedStyle(e);return n.transition!=="all 0s ease 0s"&&n.transition.includes(t)}))}}}));
+//# sourceMappingURL=p-549b62ba.system.js.map

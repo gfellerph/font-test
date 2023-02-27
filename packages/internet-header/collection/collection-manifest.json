@@ -1,0 +1,27 @@
+{
+  "entries": [
+    "./components/post-internet-breadcrumbs/post-internet-breadcrumbs.js",
+    "./components/post-internet-footer/post-internet-footer.js",
+    "./components/post-internet-header/post-internet-header.js",
+    "./components/post-klp-login-widget/post-klp-login-widget.js",
+    "./components/post-language-switch/post-language-switch.js",
+    "./components/post-logo/post-logo.js",
+    "./components/post-main-navigation/post-main-navigation.js",
+    "./components/post-meta-navigation/post-meta-navigation.js",
+    "./components/post-search/post-search.js",
+    "./components/post-skiplinks/post-skiplinks.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "3.0.1",
+    "typescriptVersion": "4.9.5"
+  },
+  "collections": [],
+  "bundles": [
+    {
+      "components": [
+        "swisspost-internet-header"
+      ]
+    }
+  ]
+}

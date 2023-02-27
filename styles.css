@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background: rgb(75, 75, 75);
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+swisspost-internet-header {
+  overflow: hidden;
+}
+
+section:hover {
+  z-index: 1000;
+}
+
+h1 {
+  margin: 1em 0 0.5em 0;
+  font-size: 1rem;
+}
+
+.line {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: red;
+  z-index: 100000000;
+  pointer-events: none;
+}
+
+a {
+  color: inherit;
+}

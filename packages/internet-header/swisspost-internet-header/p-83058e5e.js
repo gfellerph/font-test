@@ -1,0 +1,2 @@
+import{h as s}from"./p-61b09b9b.js";const e=e=>s("svg",{viewBox:"0 0 32 32","aria-hidden":"true",class:e.classNames},s("use",{href:`#${e.name}`}));export{e as S};
+//# sourceMappingURL=p-83058e5e.js.map

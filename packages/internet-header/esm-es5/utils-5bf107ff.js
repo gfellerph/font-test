@@ -1,0 +1,2 @@
+var uniqueId=function(){var e=0;return function(r){r=r||"";e+=1;return r+e}}();var prefersReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;export{prefersReducedMotion as p,uniqueId as u};
+//# sourceMappingURL=utils-5bf107ff.js.map

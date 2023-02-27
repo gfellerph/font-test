@@ -1,0 +1,299 @@
+/**
+ * Colors used by the post style guide
+ */
+/**
+ * Maps. Allow maps to have custom colors from the project
+ * by always merging into a default empty map
+ */
+*,
+:host,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (forced-colors: active) {
+  svg {
+    color: white;
+  }
+}
+
+.language-switch-dropdown ul, .no-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.btn-blank {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.language-switch-dropdown a,
+.language-switch-dropdown button, .nav-link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  transition: color 200ms;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.language-switch-dropdown a:hover,
+.language-switch-dropdown button:hover, .nav-link:hover, .language-switch-dropdown a:focus,
+.language-switch-dropdown button:focus, .nav-link:focus {
+  color: black;
+}
+.language-switch-dropdown a > svg,
+.language-switch-dropdown button > svg, .nav-link > svg {
+  width: 1.4em;
+  height: 1.4em;
+  flex-shrink: 0;
+}
+.language-switch-dropdown a > span,
+.language-switch-dropdown button > span, .nav-link > span {
+  flex-shrink: 1;
+}
+
+.box > *:first-child {
+  margin-top: 0;
+}
+.box > *:last-child {
+  margin-bottom: 0;
+}
+
+.mirrored {
+  transform: scaleX(-1);
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+@media (min-width: 1441px) {
+  .wide-container {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023.98px) {
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+@media (max-width: -0.02px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .hidden-rg {
+    display: none;
+  }
+}
+
+@media (max-width: 779.98px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .hidden-lg {
+    display: none;
+  }
+}
+
+@media (max-width: 1279.98px) {
+  .hidden-xl {
+    display: none;
+  }
+}
+
+@media (max-width: 1440.98px) {
+  .hidden-xxl {
+    display: none;
+  }
+}
+
+:host {
+  --separator-display: none;
+  --separator-height: 100%;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+:host::before {
+  display: var(--separator-display);
+  height: var(--separator-height);
+  border-left: 1px solid #e6e6e6;
+  content: "";
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+  border: none;
+  box-shadow: none;
+  background: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+}
+.lang-btn:hover, .lang-btn:focus {
+  color: black;
+}
+.lang-btn svg {
+  width: 1.5em;
+  height: 1.5em;
+  transition: transform 250ms;
+}
+.lang-btn svg.rotated {
+  transform: rotate(180deg);
+}
+
+.language-switch {
+  position: relative;
+  align-self: stretch;
+  height: 100%;
+}
+.language-switch.list {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.current-language {
+  text-transform: uppercase;
+  border-right: 1px solid #cccccc;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.dropdown .language-switch-dropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 2px 6px 2px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transform: scale(0.1);
+  transform-origin: center top;
+  transition: transform 0.1s;
+  margin-top: var(--language-dropdown-margin-top);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dropdown .language-switch-dropdown {
+    transition: none;
+  }
+}
+.dropdown .language-switch-dropdown.open {
+  transform: scale(1);
+}
+.list .language-switch-dropdown ul {
+  display: flex;
+}
+.list .language-switch-dropdown ul > li + li {
+  border-left: 1px solid #cccccc;
+}
+.language-switch-dropdown a,
+.language-switch-dropdown button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  padding: 0 0.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 200ms, color 200ms;
+}
+.language-switch-dropdown a:hover, .language-switch-dropdown a:focus,
+.language-switch-dropdown button:hover,
+.language-switch-dropdown button:focus {
+  background: #f4f3f1;
+}
+.language-switch-dropdown a span,
+.language-switch-dropdown button span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list .language-switch-dropdown a,
+.list .language-switch-dropdown button {
+  color: black;
+  height: auto;
+  padding: 0.5rem 1rem;
+}
